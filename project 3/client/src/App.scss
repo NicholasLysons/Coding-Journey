@@ -1,0 +1,73 @@
+$color-primary : #1b7226;
+$color-light-text: rgb(207, 207, 207);
+$color-medium-text: #9C9EA1;
+$color-dark-text: rgb(108, 145, 113);
+
+.app-container {
+  margin-bottom: 8em;
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background: $color-primary;
+  color: $color-light-text;
+}
+
+.card {
+  border: none;
+}
+
+.card-body {
+  color: $color-dark-text;
+}
+
+.card-img-top {
+  max-height: 75vh;
+}
+
+.footer-link {
+  color: $color-light-text;
+  font-size: 1rem;
+}
+
+.footer-link:hover {
+  color: $color-medium-text;
+}
+
+.btn-round-sm {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.btn-round-lg {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  font-size: 20px;
+}
+
+.no-bullets {
+  list-style: none;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+    column-count: 3;
+  }
+}
